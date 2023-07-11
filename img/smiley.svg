@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="918" height="918" viewBox="0 0 918 918">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_77" data-name="Rectangle 77" width="735" height="435" transform="translate(-7025 8693)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Groupe_78" data-name="Groupe 78" transform="translate(6207 -8079)">
+    <g id="Ellipse_50" data-name="Ellipse 50" transform="translate(-6207 8079)" fill="none" stroke="#1501ff" stroke-width="20">
+      <circle cx="459" cy="459" r="459" stroke="none"/>
+      <circle cx="459" cy="459" r="449" fill="none"/>
+    </g>
+    <g id="Groupe_77" data-name="Groupe 77" transform="translate(38)">
+      <ellipse id="Ellipse_51" data-name="Ellipse 51" cx="53" cy="116.5" rx="53" ry="116.5" transform="translate(-5973 8305)" fill="#1501ff"/>
+      <ellipse id="Ellipse_52" data-name="Ellipse 52" cx="53" cy="116.5" rx="53" ry="116.5" transform="translate(-5705 8305)" fill="#1501ff"/>
+    </g>
+    <line id="Ligne_7" data-name="Ligne 7" y1="22" x2="63" transform="translate(-6100.5 8527)" fill="none" stroke="#1501ff" stroke-linecap="round" stroke-width="20"/>
+    <line id="Ligne_8" data-name="Ligne 8" y1="22" x2="63" transform="translate(-5434.826 8507.947) rotate(45)" fill="none" stroke="#1501ff" stroke-linecap="round" stroke-width="20"/>
+    <g id="Groupe_de_masques_18" data-name="Groupe de masques 18" transform="translate(910 -155)" clip-path="url(#clip-path)">
+      <g id="Ellipse_53" data-name="Ellipse 53" transform="translate(-6987 8362)" fill="none" stroke="#1501ff" stroke-width="20">
+        <ellipse cx="329.5" cy="338" rx="329.5" ry="338" stroke="none"/>
+        <ellipse cx="329.5" cy="338" rx="319.5" ry="328" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

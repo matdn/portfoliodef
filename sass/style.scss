@@ -1,0 +1,546 @@
+@import "abstract/variables",
+    "abstract/mixins",
+    "components/3D";
+
+
+:root{
+    --black: black;
+    --white:  #ececec;
+    --yellow: #2c331a;
+    --grey: #1400FF;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 800vh;
+    -webkit-overflow-scrolling: touch;
+}
+
+body{
+    width: 100vw;
+    height: 1200vh;
+    overflow-x: hidden;
+    background-color: #0008ff;
+}
+section{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #ececec;
+}
+.Home{
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+.Nav{
+    display: flex;
+    justify-content: start;
+    padding: 2% 7%;
+}
+.logo{
+    height: 60px;
+}
+.title{
+    display: flex;
+}
+
+.eatvege{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    .img{
+        width: 40%;
+        height: 100%;
+        background-image: url("img/alpes.png");
+        width: 65%;
+        background-position: right;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    .text{
+        height: 80%;
+        width: 50%;
+        color: $interColor;
+        h1{
+            color:$interColor;
+            font-size: 160px;
+            line-height: 120px;
+        }
+    }
+}
+
+.newBackground{
+    justify-content: flex-start;
+}
+.circle{
+    position: fixed;
+    background-color: #ececec;
+    width: 105vw;
+    height: 337px;
+    left: 0px;
+    transform: translate(0%, -50%);
+    z-index: 2;
+    clip-path: ellipse(50% 14% at 50% 75%);
+}
+.circle1{
+    top: 62px;
+}
+.circle2{
+    bottom: -105px;
+}
+
+.threeD{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    width:600vw !important;
+    overflow: hidden;
+    background-color: transparent;
+    position: relative;
+    .horizontal{
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        background-color: transparent;
+        padding: 0 20vw;
+        background-position: bottom;
+        background-size: cover;
+        .img1, .img2, .img3, .img4, .img5, .img6{
+            transition-duration: 1s;
+            height: 60vh;
+            width: 55vw;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .img1{
+            background-image: url("img/pizza.png");
+        }
+        .img2{
+            background-image: url("img/pbSport.png");
+        }
+        .img3{
+            background-image: url("img/bo7.png");
+        }
+        .img4{
+            background-image: url("img/pbRestaurant.png");
+        }
+        .img5{
+            background-image: url("img/sapApp.png");
+        }
+        .img6{
+            background-image: url("img/aubrac.png");
+        }
+        h1{
+            font-size: 20px;
+            line-height: 120px;
+            color: #0008ff;
+            font-family: roc grotesk;
+            font-weight: 300;
+            z-index: 1005;
+            text-transform: uppercase;
+            
+        }
+        .textPres{
+            display: none;
+        }
+        h2{
+            font-size: 32px;
+            line-height: 120px;
+            color: #0008ff;
+            font-family: roc grotesk;
+            font-weight: 300;
+            text-transform: uppercase;
+            z-index: 5;
+            display: none;
+            animation-delay: 1s;
+        }
+        p{
+            text-align: center;
+            color: #0008ff;
+            font-family: roc grotesk;
+            font-size: 24px;
+            align-items: end;
+            > span{
+                overflow: hidden;
+                display: block;
+                > span{
+                    display: block;
+                    animation-delay: 1s;
+                    transform: translateY(100%);
+                }
+            }
+        }
+    }
+    .white{
+        width: 100vw !important;
+    }
+}
+.span1{
+    animation: spanFadeIn 1s ease forwards;
+}
+.transition{
+    background-color: #ececec;
+    transform: translateY(4px);
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+}
+
+
+    /* ------Home------ */
+    
+    .HomeBackground{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        transition-duration: 1s;
+        border-radius: 32px;
+        h1{
+                z-index: 5;
+                position: absolute;
+                top: 42%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                font-family: roc grotesk , sans-serif;
+                font-size: 224px;
+                font-weight: 800;
+                color: black;
+                
+        }
+        .specialFont{
+                z-index: 10;
+                position: absolute;
+                top: 45%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                font-family: Flood Std;
+                font-size: 344px;
+                font-weight: 300;
+                color: #0008ff;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                font-style: normal;
+                // -webkit-text-stroke: 2px  #ececec;
+        }
+    }
+
+    .HomeBackground h1 span{
+        overflow: hidden;
+        display: block;
+    }
+    .animationAppearing h1 span span{
+        transform: translateY(-100%);
+        display: flex;
+        align-items: center;
+        animation: appearing 1s ease forwards;
+        animation-delay: 1s;
+        font-family: "dharma-gothic-c", sans-serif;
+    }
+    .HomeBackground h3{
+        font-size: 24px;
+        font-weight: 500;
+        margin: 20px 0;
+        color: black;
+        font-family: roc grotesk;
+    }
+    .HomeBackground .scrollInstruction{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: -35px;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        opacity: 0;
+        transition-duration: 1s;
+    }
+    .HomeBackground .mouseScroll{
+        height: 50px;
+        width: 30px;
+        border: 2px solid black;
+        border-radius: 20px;
+        position: relative;
+    }
+    .HomeBackground .mouseScroll div{
+        height: 10px;
+        width: 10px;
+        background-color: black;
+        border-radius: 20px;
+        position: absolute;
+        top: 15px;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        animation: scrolling 2s infinite;
+    }
+    /* ------Menu------ */
+    .Menu{
+        height: 100vh;
+        display: flex;
+        justify-content: start;
+        align-items: flex-start;
+        padding: 0 0 0 7%;
+        position: relative;
+        overflow: hidden;
+        background-color: #ececec;
+        .titles{
+            width: 90%;
+            height: 95%;
+            padding-top: 7%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: start;
+            z-index: 5;
+            h2{
+                font-family: roc grotesk;
+                font-weight: 500;
+                font-size: 96px;
+                text-align: start;
+                color: black;
+                margin: 1% 0;
+                span{
+                    font-weight: 500;
+                    font-size: 96px;
+                    color: transparent;
+                    -webkit-text-stroke: 1px  #0D0630;
+                }
+            } 
+        }
+        img{
+            position: absolute;
+            top:5%;
+            right: -5%;
+            width: 32rem;
+            z-index: 0;
+            
+        }
+    }
+    .cursor{
+        position: fixed;
+        z-index: 5;
+        width: 32px;
+        height: 32px;
+        background-color: black;
+        border-radius: 50%;
+        pointer-events: none;
+        transform: translate3d(0, 0, 0);
+        z-index: 200;
+    }
+    .pictures{
+        height: 100vh;
+    }
+    .DarkModeActive{
+        background-color: var(--black);
+        color: var(--white);
+    }
+.text{
+    width: 35%;
+    padding: 0 0 14% 7%;
+    color: black;
+    font-family: roc grotesk;
+    font-size: 24px;
+    display: flex;
+    align-items: end;
+    span{
+        color: #0008ff;
+    }
+}
+.Tech{
+    height: 100vh;
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    pre{
+        font-size: 24px !important;
+        width: 50%;
+        transform: translateX(-30%);
+    }       
+    p{
+        color: black;
+        font-family: roc grotesk;
+        font-size: 24px;
+        display: flex;
+        align-items: end;
+        width: 100%;
+        text-align: center;
+    }
+}
+.Dtext{
+    height: 130vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.About3D{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition-delay: 2s;
+    background-color: var(--white);
+    div{
+        display: flex;
+        gap: 40px;
+    }
+    .btn3d {
+        font-family: roc grotesk;
+        font-size: 104px;
+        width: $btn-width;
+        height: $btn-height;
+        perspective: $persp;
+    
+    .btn__flip {
+        @include facet; 
+        transform-style: preserve-3d;
+        transform-origin: center bottom ($btn-height/2);
+        transition: transform;
+        transform: rotateX(0deg);
+        text-decoration:none; 
+        
+            .btn__flip--off {
+                @include facet;
+                transform: rotateX(0deg) translateZ($btn-height/2);
+                -webkit-text-stroke: 2px;
+                color:black;
+                text-decoration:none; 
+                background-color: var(--white);
+                font-weight: 600;
+            }
+            .btn__flip--on {
+                @include facet;
+                transform: rotateX(90deg) translateZ($btn-height/2);
+                color: black;
+                text-decoration:none; 
+                background-color: var(--white);
+                font-weight: 600;
+                font-family: roc grotesk;
+            }
+        }
+    }
+}
+.About3D2{
+    padding: 7% 0;
+}
+.WB1{
+    position: absolute;
+    top: 20%;
+    left: 50%; 
+    transform: translate(0%, -50%);
+    z-index: 4;
+}
+.WB2{
+    position: absolute;
+    background-color: #ececec;
+    width: 200vh;
+    height: 337px;
+    top: 16px;
+    left: 0px;
+    transform: translate(0%, -50%);
+    z-index: 4;
+    clip-path: ellipse(50% 12% at 50% 75%);
+}
+// .counter{
+//     font-family: roc grotesk;
+//     color: #1400FF;
+//     font-size: 21px;
+//     position: absolute;
+//     left: 50%;
+//     bottom: 50px;
+//     transform: translate(-50%, -50%);
+//     z-index: 5;
+// }
+
+  .left{
+    left: 0;
+  }
+  .blueScreen{
+    background-color: #ececec;
+    padding: 0 7%;
+    width: auto;
+    // background-image: url("img/bruit.png");
+    background-position: bottom;
+    background-size: cover;
+  }
+
+@keyframes scrolling{
+    0%{
+        top: 10px;
+        opacity: 1;
+    }
+    50%{
+        top: 25px;
+        opacity: 1;
+    }
+    100%{
+        top: 35px;
+        opacity: 0.1;
+    }
+} 
+.Contact{
+    background-color: #0008ff;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 7%;
+    width: auto;
+    p{
+        color: var(--white);
+        font-family: roc grotesk;
+        font-size: 24px;
+        text-align: start;
+        font-weight: 300;
+    }
+    h2{
+        color: var(--white);
+        font-family: roc grotesk;
+        font-weight: 500;
+        font-size: 96px;
+    }
+    h3{
+        color: var(--white);
+        font-family: roc grotesk;
+        font-weight: 500;
+        font-size: 34px;
+    }
+    a{
+        text-decoration: none;
+    }
+}
+@keyframes spanFadeIn{
+    0%{
+        transform : translateY(100%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+} 
