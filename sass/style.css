@@ -561,5 +561,8 @@ section {
     transform: translateY(0%);
   }
 }
+#loom-companion-mv3 {
+  display: none !important;
+}
 
 /*# sourceMappingURL=style.css.map */
