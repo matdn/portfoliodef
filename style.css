@@ -63,7 +63,7 @@ section {
 .eatvege .img {
   width: 40%;
   height: 100%;
-  background-image: url("img/alpes.png");
+  background-image: url("img/Bdx.png");
   width: 65%;
   background-position: right;
   background-size: contain;
@@ -71,9 +71,18 @@ section {
   background-attachment: fixed;
 }
 .eatvege .text {
-  height: 80%;
+  height: 100%;
   width: 50%;
   color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  justify-content: flex-end;
+  font-weight: 200;
+}
+.eatvege .text span {
+  color: #0008ff;
+  font-weight: 400;
 }
 .eatvege .text h1 {
   color: black;
@@ -127,7 +136,7 @@ section {
 }
 .threeD .horizontal .img1, .threeD .horizontal .img2, .threeD .horizontal .img3, .threeD .horizontal .img4, .threeD .horizontal .img5, .threeD .horizontal .img6 {
   transition-duration: 1s;
-  height: 60vh;
+  height: 55vh;
   width: 55vw;
   background-position: center;
   background-size: cover;
@@ -156,7 +165,7 @@ section {
   font-size: 20px;
   line-height: 120px;
   color: #0008ff;
-  font-family: roc grotesk;
+  font-family: "roc-grotesk", sans-serif;
   font-weight: 300;
   z-index: 1005;
   text-transform: uppercase;
@@ -168,7 +177,7 @@ section {
   font-size: 32px;
   line-height: 120px;
   color: #0008ff;
-  font-family: roc grotesk;
+  font-family: "roc-grotesk", sans-serif;
   font-weight: 300;
   text-transform: uppercase;
   z-index: 5;
@@ -178,7 +187,7 @@ section {
 .threeD .horizontal p {
   text-align: center;
   color: #0008ff;
-  font-family: roc grotesk;
+  font-family: "roc-grotesk", sans-serif;
   font-size: 24px;
   align-items: end;
 }
@@ -227,7 +236,7 @@ section {
   top: 42%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: roc grotesk, sans-serif;
+  font-family: "roc-grotesk", sans-serif, sans-serif;
   font-size: 224px;
   font-weight: 800;
   color: black;
@@ -238,7 +247,7 @@ section {
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: Flood Std;
+  font-family: "flood-std", sans-serif;
   font-size: 344px;
   font-weight: 300;
   color: #0008ff;
@@ -267,7 +276,7 @@ section {
   font-weight: 500;
   margin: 20px 0;
   color: black;
-  font-family: roc grotesk;
+  font-family: "roc-grotesk", sans-serif;
 }
 
 .HomeBackground .scrollInstruction {
@@ -325,7 +334,7 @@ section {
   z-index: 5;
 }
 .Menu .titles h2 {
-  font-family: roc grotesk;
+  font-family: "roc-grotesk", sans-serif;
   font-weight: 500;
   font-size: 96px;
   text-align: start;
@@ -369,24 +378,20 @@ section {
 
 .text {
   width: 35%;
-  padding: 0 0 14% 7%;
+  padding: 0 7% 0% 7%;
   color: black;
-  font-family: roc grotesk;
+  font-family: "roc-grotesk", sans-serif;
   font-size: 24px;
   display: flex;
   align-items: end;
 }
-.text span {
-  color: #0008ff;
-}
 
 .Tech {
-  height: 100vh;
   display: flex;
+  height: 20vh !important;
   gap: 10%;
   justify-content: center;
   align-items: center;
-  position: relative;
   flex-direction: column;
 }
 .Tech pre {
@@ -396,16 +401,17 @@ section {
 }
 .Tech p {
   color: black;
-  font-family: roc grotesk;
+  font-family: "roc-grotesk", sans-serif;
   font-size: 24px;
-  display: flex;
-  align-items: end;
   width: 100%;
   text-align: center;
 }
+.Tech p span {
+  color: #0008ff;
+}
 
 .Dtext {
-  height: 130vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -424,7 +430,7 @@ section {
   gap: 40px;
 }
 .About3D .btn3d {
-  font-family: roc grotesk;
+  font-family: "roc-grotesk", sans-serif;
   font-size: 104px;
   width: 100px;
   height: 140px;
@@ -469,7 +475,11 @@ section {
   text-decoration: none;
   background-color: var(--white);
   font-weight: 600;
-  font-family: roc grotesk;
+  font-family: "roc-grotesk", sans-serif;
+}
+
+.knowMoreButton {
+  cursor: pointer;
 }
 
 .About3D2 {
@@ -506,6 +516,7 @@ section {
   width: auto;
   background-position: bottom;
   background-size: cover;
+  height: 20vh !important;
 }
 
 @keyframes scrolling {
@@ -529,24 +540,25 @@ section {
   justify-content: center;
   flex-direction: column;
   padding: 0 7%;
+  gap: 2rem;
   width: auto;
 }
 .Contact p {
   color: var(--white);
-  font-family: roc grotesk;
+  font-family: "roc-grotesk", sans-serif;
   font-size: 24px;
   text-align: start;
   font-weight: 300;
 }
 .Contact h2 {
   color: var(--white);
-  font-family: roc grotesk;
+  font-family: "roc-grotesk", sans-serif;
   font-weight: 500;
   font-size: 96px;
 }
 .Contact h3 {
   color: var(--white);
-  font-family: roc grotesk;
+  font-family: "roc-grotesk", sans-serif;
   font-weight: 500;
   font-size: 34px;
 }

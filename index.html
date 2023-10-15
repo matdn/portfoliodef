@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.typekit.net/jmi5kfn.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="sass/components/warped.css">
     <title>Portfolio</title>
 </head>
 <body>
@@ -42,7 +41,10 @@
         <div class="text">
             <p>Je suis Matis, développeur <span>front-end créatif</span> spécialisé en <span>UX/UI design</span>. 
                 En dernière année de licence en informatique.</p>
+                <p> J'aime relever <span>des défis techniques et trouver des solutions innovantes.</span> 🫧<br> La technologie évolue constamment et j'adore en tirer parti pour créer 
+                    des expériences uniques. <br><span>Prêt à me lancer dans de nouveaux projets avec vous! 🫡</span> </p>  
         </div>
+        
     </section>
     <section class="Dtext">
         <div class="Dtext__recyclable">
@@ -94,13 +96,12 @@
                     </div>
                 </div>
         </section>
-        <section class="blueScreen">
+        <!-- <section class="blueScreen">
             <div class="Tech">
-                <pre id="d"></pre>
-                <p> J'aime relever des défis techniques et trouver des solutions innovantes. <br> La technologie évolue constamment et j'adore en tirer parti pour créer 
-                    des expériences uniques. <br> Prêt à me lancer dans de nouveaux projets avec vous!</p> 
+               
+                 <pre id="d"></pre> 
             </div>
-        </section>
+        </section> -->
         <!-- <div class="circle circle1"></div>
         <div class="circle circle2"></div> -->
         <section class="threeD">
@@ -111,7 +112,7 @@
                 </section> -->
                 <section class="horizontal panel">
                     <div class="img1"></div>
-                    <h1 onclick="toggleImage(this)">En savoir plus</h1>
+                    <h1 class="knowMoreButton" onclick="toggleImage(this)">En savoir plus</h1>
                     <div class="textPres">
                         <h2> pb - Paranoid Broccoli</h2>
                         <p><span><span class="span1">Le ParanoÏd Broccoli 🥦 est mon premier projet scolaire centré sur <strong>l'UI et Figma</strong>,
@@ -123,7 +124,7 @@
                 </section>
                 <section class="horizontal panel">
                     <div class="image img2"></div>
-                    <h1 onclick="toggleImage(this)"><span><span >En savoir plus</span></span></h1>
+                    <h1 class="knowMoreButton" onclick="toggleImage(this)"><span><span >En savoir plus</span></span></h1>
                     <div class="textPres">
                         <h2>PB sport</h2>
                         <p><span><span class="span1">Le Paranoïd Broccoli, projet créé par des amoureux des sports de glisse 🏄🏽‍♂️, 
@@ -134,7 +135,7 @@
                 </section>
                 <section class="horizontal panel">
                     <div class="image img3"></div>
-                    <h1 onclick="toggleImage(this)"><span><span class="span">En savoir plus</span></span></h1>
+                    <h1 class="knowMoreButton" onclick="toggleImage(this)"><span><span class="span">En savoir plus</span></span></h1>
                     <div class="textPres">
                         <h2>ESWIT</h2>
                         <p><span><span class="span1">eSWIT est un projet qui m'a été confiée lors de ma première année d'alternance. 
@@ -145,7 +146,7 @@
                 </section>
                 <section class="horizontal panel">
                     <div class="image img4"></div>
-                    <h1 onclick="toggleImage(this)"><span><span class="span">En savoir plus</span></span></h1>
+                    <h1 class="knowMoreButton" onclick="toggleImage(this)"><span><span class="span">En savoir plus</span></span></h1>
                     <div class="textPres">
                         <h2>PB Restaurant</h2>
                         <p><span><span class="span1">Le Paranoïd Broccoli a ouvert son premier restaurant...😌 Nous avons donc dû intégrer nos maquettes de l'année précédente réalisées spécialement pour l'occasion. 👀 Un projet vraiment cool qui m'a permis de découvrir Strapi, 
@@ -155,7 +156,7 @@
                 </section>
                 <section class="horizontal panel">
                     <div class="image img5"></div>
-                    <h1 onclick="toggleImage(this)"><span><span class="span">En savoir plus</span></span></h1>
+                    <h1 class="knowMoreButton" onclick="toggleImage(this)"><span><span class="span">En savoir plus</span></span></h1>
                     <div class="textPres">
                         <h2>SAP applications</h2>
                         <p><span><span class="span1">J'ai découvert le monde de SAP au cours de ma première année d'alternance, je maitrise donc les bases du framework JS, SAP UI5, ✌️
@@ -165,7 +166,7 @@
                 </section>
                 <section class="horizontal panel">
                     <div class="image img6"></div>
-                    <h1 onclick="toggleImage(this)">
+                    <h1 class="knowMoreButton" onclick="toggleImage(this)">
                         En savoir plus
                     </h1>
                     <div class="textPres">
@@ -179,7 +180,7 @@
                 </section>
             </section>
         </section>
-        
+        <div class="progress-scroll-bar" id="progressBar"></div>
     
     <section class="Contact">
         <!-- <div class="">
