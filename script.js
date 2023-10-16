@@ -13,6 +13,71 @@ window.addEventListener('scroll', function(){
     scrollLine.style.width = `${percentScrolled}%` ;
 });
 
+gsap.to(".btn__flip1",{
+  scrollTrigger: {
+      trigger: ".Dtext",
+      start: "top 0",
+      end: '+=300',
+      scrub:1
+  },
+  rotateX: -90
+});
+gsap.to(".btn__flip2",{
+  scrollTrigger: {
+      trigger: ".Dtext",
+      start: "top 40",
+      end: '+=300',
+      scrub:1
+  },
+  rotateX: -90
+});
+gsap.to(".btn__flip3",{
+  scrollTrigger: {
+      trigger: ".Dtext",
+      start: "top 80",
+      end: '+=300',
+      scrub:1
+  },
+  rotateX: -90
+});
+gsap.to(".btn__flip4",{
+  scrollTrigger: {
+      trigger: ".Dtext",
+      start: "top 120",
+      end: '+=300',
+      scrub:1
+  },
+  rotateX: -90
+});
+gsap.to(".btn__flip5",{
+  scrollTrigger: {
+      trigger: ".Dtext",
+      start: "top 160",
+      end: '+=300',
+      scrub:1
+  },
+  rotateX: -90
+});
+gsap.to(".btn__flip6",{
+  scrollTrigger: {
+      trigger: ".Dtext",
+      start: "top 200",
+      end: '+=300',
+      scrub:1
+  },
+  rotateX: -90
+});
+gsap.to(".btn__flip7",{
+  scrollTrigger: {
+      trigger: ".Dtext",
+      start: "top 240",
+      end: '+=300',
+      scrub:1
+  },
+  rotateX: -90
+});
+
+
 let sections = gsap.utils.toArray(".panel");
 
 if (!('ontouchstart' in window || navigator.maxTouchPoints)) {
