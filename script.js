@@ -1,7 +1,5 @@
 gsap.registerPlugin(ScrollTrigger);
 
-// Les animations avec GSAP que vous avez déjà définies ici...
-
 const scrollLine = document.querySelector('.scroll-line');
 
 window.addEventListener('scroll', function(){
@@ -114,9 +112,7 @@ function toggleImage(element) {
 }
 
 function parallax(element) {
-  // Vérifiez si l'utilisateur est sur un dispositif tactile
   if (!('ontouchstart' in window || navigator.maxTouchPoints)) {
-    // Votre code pour la parallaxe ici
     const windowH = window.innerHeight;
     function inView(elements) {
         let elementPositionTop = elements.getBoundingClientRect().top - windowH;
@@ -139,7 +135,6 @@ function disableHorizontalScrollOnTouch() {
   }
 }
 
-// Appelez les fonctions ici
 disableHorizontalScrollOnTouch();
 
   

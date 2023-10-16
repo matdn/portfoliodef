@@ -115,7 +115,7 @@ section{
     height: 100vh;
     display: flex;
     align-items: center;
-    width:600vw !important;
+    width:600vw;
     overflow: hidden;
     background-color: transparent;
     position: relative;
@@ -126,7 +126,7 @@ section{
         align-items: center;
         width: 70vw;
         background-color: transparent;
-        // padding: 0 20vw;
+        padding: 0 20vw;
         background-position: bottom;
         background-size: cover;
         .img1, .img2, .img3, .img4, .img5, .img6{
@@ -561,6 +561,7 @@ section{
     html{
         width: 100vw;
         overflow-x: hidden;
+        height: auto !important;
     }
     body{
         height: auto;
@@ -589,6 +590,13 @@ section{
             padding: 4rem 0;
         }
     }
+    .threeD{
+        width: 100vw;
+        height: auto !important;
+        .newBackground{
+            align-items: center !important;
+        }
+    }
     .Dtext{
         display: none;
     }
@@ -610,6 +618,13 @@ section{
     }
     .threeD .horizontal{
         padding: 0 !important;
+        overflow-x: visible !important;
+    }
+    section{
+        height: auto !important;
+    }
+    .eatvege{
+        height: 100vh !important;
     }
 }
 @media screen and (max-width: 500px) {

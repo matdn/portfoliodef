@@ -110,25 +110,24 @@ section {
 }
 
 .circle2 {
-  bottom: -105px;
+  bottom: 25px;
 }
 
 .threeD {
   height: 100vh;
   display: flex;
   align-items: center;
-  width: 600vw !important;
+  width: 600vw;
   overflow: hidden;
   background-color: transparent;
   position: relative;
 }
 .threeD .horizontal {
   height: 100%;
-  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100vw;
+  width: 70vw;
   background-color: transparent;
   padding: 0 20vw;
   background-position: bottom;
@@ -580,6 +579,7 @@ section {
   html {
     width: 100vw;
     overflow-x: hidden;
+    height: auto !important;
   }
   body {
     height: auto;
@@ -608,6 +608,13 @@ section {
     width: 80% !important;
     padding: 4rem 0;
   }
+  .threeD {
+    width: 100vw;
+    height: auto !important;
+  }
+  .threeD .newBackground {
+    align-items: center !important;
+  }
   .Dtext {
     display: none;
   }
@@ -626,6 +633,21 @@ section {
   }
   .Contact h3 {
     font-size: 1.5rem !important;
+  }
+  .threeD .horizontal {
+    padding: 0 !important;
+    overflow-x: visible !important;
+  }
+  section {
+    height: auto !important;
+  }
+  .eatvege {
+    height: 100vh !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .threeD .horizontal {
+    padding: 0 !important;
   }
 }
 
