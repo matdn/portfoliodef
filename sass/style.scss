@@ -108,7 +108,7 @@ section{
     top: 62px;
 }
 .circle2{
-    bottom: -105px;
+    bottom: 25px;
 }
 
 .threeD{
@@ -121,13 +121,12 @@ section{
     position: relative;
     .horizontal{
         height: 100%;
-        width: 50%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 100vw;
+        width: 70vw;
         background-color: transparent;
-        padding: 0 20vw;
+        // padding: 0 20vw;
         background-position: bottom;
         background-size: cover;
         .img1, .img2, .img3, .img4, .img5, .img6{
@@ -314,7 +313,6 @@ section{
         justify-content: start;
         align-items: flex-start;
         padding: 0 0 0 7%;
-        position: relative;
         overflow: hidden;
         background-color: #ececec;
         .titles{
@@ -333,13 +331,12 @@ section{
                 text-align: start;
                 color: black;
                 margin: 1% 0;
-                span{
-                    font-weight: 500;
-                    font-size: 96px;
-                    color: transparent;
-                    -webkit-text-stroke: 1px  #0D0630;
-                }
             } 
+            #title1{
+                color: transparent;
+                -webkit-text-stroke: 1px  #0D0630;
+                flex-wrap: wrap;
+            }
         }
         img{
             position: absolute;
@@ -559,3 +556,64 @@ section{
         transform: translateY(0%);
     }
 } 
+
+@media screen and (max-width: 800px) {
+    html{
+        width: 100vw;
+        overflow-x: hidden;
+    }
+    body{
+        height: auto;
+    }
+    .HomeBackground .specialFont {
+        font-size: 8rem;
+    }
+    .HomeBackground h1{
+        transform: translate(-50%, -10%) rotate(-90deg);
+        font-size: 9rem;
+    }
+    .Menu{
+        height: auto;
+        padding: 4rem 7%;
+    }
+    .Menu .titles h2{
+        font-size: 3.6rem !important;
+        width: 100%;
+        flex-wrap: wrap;
+        display: flex;
+    }
+    .eatvege{
+        flex-direction: column;
+        .text{
+            width: 80% !important;
+            padding: 4rem 0;
+        }
+    }
+    .Dtext{
+        display: none;
+    }
+    .newBackground{
+        flex-direction: column;
+    }
+    .Contact{
+        height:auto !important;
+        padding: 8rem 7%;
+        h2 {
+            font-size: 2.5rem !important;
+        }
+        p{
+            font-size: 1.5rem !important;
+        }
+        h3{
+            font-size: 1.5rem !important;
+        }
+    }
+    .threeD .horizontal{
+        padding: 0 !important;
+    }
+}
+@media screen and (max-width: 500px) {
+    .threeD .horizontal{
+        padding: 0 !important;
+    }
+}

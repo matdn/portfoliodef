@@ -319,7 +319,6 @@ section {
   justify-content: start;
   align-items: flex-start;
   padding: 0 0 0 7%;
-  position: relative;
   overflow: hidden;
   background-color: #ececec;
 }
@@ -341,11 +340,10 @@ section {
   color: black;
   margin: 1% 0;
 }
-.Menu .titles h2 span {
-  font-weight: 500;
-  font-size: 96px;
+.Menu .titles #title1 {
   color: transparent;
   -webkit-text-stroke: 1px #0D0630;
+  flex-wrap: wrap;
 }
 .Menu img {
   position: absolute;
@@ -576,6 +574,58 @@ section {
   }
   100% {
     transform: translateY(0%);
+  }
+}
+@media screen and (max-width: 800px) {
+  html {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  body {
+    height: auto;
+  }
+  .HomeBackground .specialFont {
+    font-size: 8rem;
+  }
+  .HomeBackground h1 {
+    transform: translate(-50%, -10%) rotate(-90deg);
+    font-size: 9rem;
+  }
+  .Menu {
+    height: auto;
+    padding: 4rem 7%;
+  }
+  .Menu .titles h2 {
+    font-size: 3.6rem !important;
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+  }
+  .eatvege {
+    flex-direction: column;
+  }
+  .eatvege .text {
+    width: 80% !important;
+    padding: 4rem 0;
+  }
+  .Dtext {
+    display: none;
+  }
+  .newBackground {
+    flex-direction: column;
+  }
+  .Contact {
+    height: auto !important;
+    padding: 8rem 7%;
+  }
+  .Contact h2 {
+    font-size: 2.5rem !important;
+  }
+  .Contact p {
+    font-size: 1.5rem !important;
+  }
+  .Contact h3 {
+    font-size: 1.5rem !important;
   }
 }
 
