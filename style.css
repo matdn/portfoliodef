@@ -17,7 +17,6 @@ html {
 
 body {
   width: 100vw;
-  height: 1200vh;
   overflow-x: hidden;
   background-color: #0008ff;
 }
@@ -643,6 +642,9 @@ section {
   }
   .eatvege {
     height: 100vh !important;
+  }
+  .textPres {
+    padding: 0 0 24% 0;
   }
 }
 @media screen and (max-width: 500px) {
