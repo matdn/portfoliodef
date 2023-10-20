@@ -155,7 +155,7 @@ section{
         .img6{
             background-image: url("img/aubrac.png");
         }
-        h1{
+        h2{
             font-size: 20px;
             line-height: 120px;
             color: #0008ff;
@@ -163,22 +163,23 @@ section{
             font-weight: 300;
             z-index: 1005;
             text-transform: uppercase;
+            text-align: center;
             
         }
         .textPres{
             display: none;
         }
-        h2{
-            font-size: 32px;
-            line-height: 120px;
-            color: #0008ff;
-            font-family: "roc-grotesk", sans-serif;
-            font-weight: 300;
-            text-transform: uppercase;
-            z-index: 5;
-            display: none;
-            animation-delay: 1s;
-        }
+        // h2{
+        //     font-size: 32px;
+        //     line-height: 120px;
+        //     color: #0008ff;
+        //     font-family: "roc-grotesk", sans-serif;
+        //     font-weight: 300;
+        //     text-transform: uppercase;
+        //     z-index: 5;
+        //     // display: none;
+        //     animation-delay: 1s;
+        // }
         p{
             text-align: center;
             color: #0008ff;

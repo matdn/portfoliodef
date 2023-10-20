@@ -159,7 +159,7 @@ section {
 .threeD .horizontal .img6 {
   background-image: url("img/aubrac.png");
 }
-.threeD .horizontal h1 {
+.threeD .horizontal h2 {
   font-size: 20px;
   line-height: 120px;
   color: #0008ff;
@@ -167,20 +167,10 @@ section {
   font-weight: 300;
   z-index: 1005;
   text-transform: uppercase;
+  text-align: center;
 }
 .threeD .horizontal .textPres {
   display: none;
-}
-.threeD .horizontal h2 {
-  font-size: 32px;
-  line-height: 120px;
-  color: #0008ff;
-  font-family: "roc-grotesk", sans-serif;
-  font-weight: 300;
-  text-transform: uppercase;
-  z-index: 5;
-  display: none;
-  animation-delay: 1s;
 }
 .threeD .horizontal p {
   text-align: center;
