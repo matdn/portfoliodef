@@ -228,7 +228,7 @@ section {
   transition-duration: 1s;
   border-radius: 32px;
 }
-.HomeBackground h1 {
+.HomeBackground h2 {
   z-index: 5;
   position: absolute;
   top: 42%;
